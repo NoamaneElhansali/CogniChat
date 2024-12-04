@@ -1,0 +1,116 @@
+.Container-login{
+    background-image:url('https://images.pexels.com/photos/7130872/pexels-photo-7130872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height: 100vh;
+}
+.from-home-login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.partie-logo img{
+    width: 50px;
+    height: 50px;
+}
+.partie-logo{
+    justify-self: center;
+}
+.partie-text{
+    text-align: center;
+}
+.partie-button{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 10px;
+    padding-top:15px ;
+}
+.button-home-login,.button-home-sigup{
+    background-color: #0FA47F;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+}
+.coolinput {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: static;
+    max-width: 240px;
+  }
+  
+  .coolinput label.text {
+    font-size: 0.75rem;
+    color: #0FA47F;
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 0 7px;
+    padding: 0 3px;
+    background: #c4f4f3;
+    border-radius: 20px;
+    width: fit-content;
+  }
+  
+  .coolinput input[type=text].input {
+    padding: 11px 10px;
+    font-size: 0.75rem;
+    border: 1px #0FA47F solid;
+    border-radius: 5px;
+    background: transparent;
+    width: 280px;
+    height: 25px;
+  }
+  
+  .coolinput input[type=text].input:focus {
+    outline: none;
+  }
+  .coolinput input[type=password].input {
+    padding: 11px 10px;
+    font-size: 0.75rem;
+    border: 1px #0FA47F solid;
+    border-radius: 5px;
+    background: transparent;
+    width: 280px;
+    height: 25px;
+  }
+  
+  .coolinput input[type=password].input:focus {
+    outline: none;
+  }
+  .partie-input{
+    width: 300px;
+  }
+  .partie-button-c{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .button-Continue{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0FA47F;
+    color: white;
+  }
+  .lien-signup{
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    color: #0FA47F;
+  }
+  .error{
+    color: red;
+  }
+  .lien-home-login{
+    text-decoration: none;
+    color: white;
+  }

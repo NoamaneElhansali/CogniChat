@@ -1,0 +1,206 @@
+
+.container-home{
+    display: flex;
+    height: 100vh;
+}
+.slide-menu{
+    width: 300px;
+    overflow: hidden;
+    background-color: #202123;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.button-top-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ferme-barre{
+    background: transparent;
+    border: none;
+    width: 30px;
+    margin: 10px;
+    height: 30px;
+    cursor: pointer;
+}
+.new-session{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    cursor: pointer;
+}
+.slide-menu-center{
+    height: 500px;
+    align-self: center;
+    width: 270px;
+    overflow-y: scroll;
+}
+.slide-menu-center::-webkit-scrollbar{
+    display: inline;
+}
+.slide-menu-bottom{
+    height: 150px;
+    width: 250px;
+    align-self: center;
+    border-top: 1px solid rgba(165, 165, 165, 0.408);
+}
+.mode-slide{
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 7px;
+    margin-left: 10px;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: 500ms;
+}
+.mode-slide img{
+    width: 30px;
+}
+.mode-slide:hover,.logout-slide:hover{
+    background-color: #333436;
+    cursor: pointer;
+}
+.logout-slide img{
+    width: 25px;
+}
+.logout-slide{
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 9px;
+    margin-left: 10px;
+    height: 50px;
+    padding-left: 25px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: 500ms;
+}
+.body-container-home{ 
+    padding: 20px;
+    height: 92vh;
+    width: 71%;
+    position: relative;
+}
+.affiche-message-tous{
+    border: none;
+    padding: 10px ;
+    border-radius: 5px ;
+    height: 50;
+    max-height: 75% ;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+.affiche-message-tous::-webkit-scrollbar{
+    width: 10px;
+    color: #007bff;
+}
+.user-message{
+    text-align: right;
+    margin: 10px 0;
+}
+.Assistant-message{
+    text-align: left;
+    margin: 10px 0;
+    display: flex;
+    align-items:start;
+}
+.input-user{
+    flex: 1;
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1.2em;
+}
+.btn-user{
+    padding: 5px 10px 5px 0px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.body-home{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+}
+.cont-btn-user{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    width:95% ;
+    gap: 10px;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    border-radius: 20px;
+
+}
+.img-message-assistant{
+    width: 30px;
+}
+.message{
+    margin: 7px;
+}
+.btn-copy{
+    align-self: flex-end;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    color: rgb(149, 149, 149);
+    cursor: pointer;
+    padding: 5px;   
+    border: 1px solid white;
+}
+.copied{
+    color: white;
+}
+.session{
+    background-color: rgb(54, 54, 54);
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(206, 206, 206);
+    margin: 5px 0;
+}
+/* Animation pour le texte "En train d'écrire..." */
+.writing-indicator {
+    font-size: 1rem;
+    font-style: italic;
+    color: #888;
+}
+
+.writing-indicator::after {
+    content: " ";
+    display: inline-block;
+    animation: ellipsis 1.5s infinite;
+}
+
+@keyframes ellipsis {
+    0% {
+        content: " .";
+    }
+    33% {
+        content: " ..";
+    }
+    66% {
+        content: " ...";
+    }
+    100% {
+        content: " ";
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .body-container-home{
+        padding: 0px;
+        width: 100%;
+    }
+    .body-home{
+        width: 90%;
+    }
+}
